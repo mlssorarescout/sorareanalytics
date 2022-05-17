@@ -5,7 +5,7 @@ from gurobipy import Model, GRB, quicksum, max_
 
 
 
-df_rare = pd.read_csv("https://raw.githubusercontent.com/mlssorarescout/sorareanalytics/main/mls_sorare_rare.csv")
+df_rare = pd.read_csv("https://raw.githubusercontent.com/mlssorarescout/sorareanalytics/main/lineup_optimization/mls_sorare_rare.csv")
 df_rare.head()
 
 
