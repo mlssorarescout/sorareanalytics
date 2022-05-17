@@ -1,23 +1,13 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 #Import Libraries
 import os
 import pandas as pd
 from gurobipy import Model, GRB, quicksum, max_
 
 
-# In[2]:
-
 
 df_rare = pd.read_csv("https://raw.githubusercontent.com/mlssorarescout/sorareanalytics/main/mls_sorare_rare.csv")
 df_rare.head()
 
-
-# In[3]:
 
 
 indices = df_rare.player
@@ -61,9 +51,6 @@ for v in m.getVars():
         print(v.varName, v.x)
 
 print('Cost in USD $', m.objVal)
-
-
-# In[4]:
 
 
 results.head()
